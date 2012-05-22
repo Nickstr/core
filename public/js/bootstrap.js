@@ -18,6 +18,8 @@
  * ========================================================== */
 
 
+
+
 !function ($) {
 
   $(function () {
@@ -78,7 +80,7 @@
  * ========================================================== */
 
 
-!function ($) {
+function ($) {
 
   "use strict"; // jshint ;_;
 
@@ -144,10 +146,18 @@
   * ============== */
 
   $(function () {
+  alert('hop');
     $('body').on('click.alert.data-api', dismiss, Alert.prototype.close)
   })
 
-}(window.jQuery);/* ============================================================
+}(window.jQuery);
+
+
+
+
+
+
+/* ============================================================
  * bootstrap-button.js v2.0.3
  * http://twitter.github.com/bootstrap/javascript.html#buttons
  * ============================================================
