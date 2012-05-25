@@ -1,0 +1,32 @@
+#!/bin/bash
+
+git checkout master
+git fetch upstream
+git merge upstream/master
+echo "Updating core"
+
+cd bundles/admin
+git checkout master
+git fetch upstream
+git merge upstream/master
+echo "Updating admin"
+
+cd ../client
+git checkout master
+git fetch upstream
+git merge upstream/master
+echo "Updating client"
+
+cd ../components
+git checkout master
+git fetch upstream
+git merge upstream/master
+echo "Updating components"
+
+cd ../domain
+git checkout master
+git fetch upstream
+git merge upstream/master
+echo "Updating domain"
+
+echo "Done!"

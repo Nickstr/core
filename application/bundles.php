@@ -66,5 +66,10 @@ return array(
 		'auto' => true,
 		'location' => 'components'.DS.'bootsparks'
 	),
+	
+	'layla_thirdparty_notification' => array(
+		'auto' => true,
+		'location' => 'components'.DS.'notification'
+	),
 
 );
